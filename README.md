@@ -8,4 +8,4 @@ The model uses gradient decent to predict prices based on floor level and square
 The training data is based on actual sales information from The Mark Condominium in Houston.
 The training accuracy is 98.5%
 
-Octave
+Matlab/Octave
