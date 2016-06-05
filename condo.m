@@ -25,5 +25,13 @@ fprintf('Theta computed from gradient descent: \n');
 fprintf(' %f \n', theta);
 fprintf('\n');
 
+% Compute accuracy on our training set
+p = (X * theta);
 
+SSres = sum((p - y) .^ 2);
+SStot = sum((y - mean(y)) .^ 2);
+
+Rsquared = round((1 - (SSres / SStot)) * 10000) / 100;
+
+fprintf('R^2: %f\n', Rsquared);
 
